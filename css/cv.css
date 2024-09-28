@@ -1,0 +1,19 @@
+ul
+{
+  list-style-position:inside;
+}
+
+.styleT {
+    font-family: "Times New Roman", Times, serif; font-size: 20px;
+}
+.styleH {
+    font-family: Helvetica, Sans-serif; font-size: 24px;
+}
+
+.paperauthor{
+	font-weight:bold;
+}
+
+.highlight{
+  font-weight:bold;
+}
