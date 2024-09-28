@@ -1,3 +1,0 @@
-# The following line is used to run PHP scripts.
-# Changing it is not recommended.
-FcgidWrapper /users/zhuolong/public_html/cgi-bin/php-cgi .php
