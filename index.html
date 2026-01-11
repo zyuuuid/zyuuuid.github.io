@@ -44,6 +44,11 @@
 
       hr {
         border-top: 2px solid #C2C2C2;
+        margin-top: 45px;
+      }
+
+      section {
+        margin-top: 45px;
       }
 
       p {
@@ -68,12 +73,12 @@
         height: 0;
         overflow: hidden;
       }
-      #home {padding-top:45px}
-      #aboutme {padding-top:45px}
-      #publications {padding-top:45px}
-      #experience {padding-top:45px}
-      #awards {padding-top:45px}
-      #abitmore {padding-top:45px}
+      #home { margin-top:0; padding-top:45px; }
+
+
+
+
+
     </style>
     
   </head>
@@ -97,41 +102,65 @@
           <ul class="nav navbar-nav">
             <li class="scroll-link"><a href="http://cs.jhu.edu/~zhuolong/#top">Home</a></li>
             <li class="scroll-link"><a href="http://cs.jhu.edu/~zhuolong/#aboutme">About me</a></li>
+            <li class="scroll-link"><a href="http://cs.jhu.edu/~zhuolong/#education">Education</a></li>
+            <li class="scroll-link"><a href="http://cs.jhu.edu/~zhuolong/#experience">Experience</a></li>
             <li class="scroll-link"><a href="http://cs.jhu.edu/~zhuolong/#publications">Publications</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
-    
-    
     
     <div class="container">
       <section id="home">
         <h1>Zhuolong Yu</h1> 
         <p class="styleT">
-          <!-- <vi>Ph.D. Student <br>Department of Computer Science <br>Johns Hopkins University<br> -->
-            E-mail:<a href="mailto:yuzhuolong1993@gmail.com">
-          <vi>zhuolong</vi>
+          <vi>Professor(特任教授)<br>Department of Computer Science and Technology <br>University of Science and Technology of China<br>
+            E-mail:<a href="mailto:zhuolongyu@ustc.edu.cn">
+          <vi>zhuolongyu</vi>
           <vi style="font-size:10px; font-weight:bold;"> [at]</vi>
-          <vi> cs</vi>
+          <vi> ustc</vi>
+          <vi style="font-size:10px; font-weight:bold;"> [dot]</vi> 
+          <vi> edu</vi> 
           <vi style="font-size:10px; font-weight:bold;"> [dot]</vi>
-          <vi> jhu</vi> 
-          <vi style="font-size:10px; font-weight:bold;"> [dot]</vi>
-          <vi> edu</vi>
+          <vi> cn</vi>
           </a></vi>
          </p>
         <hr>
       </section>
       <section id="aboutme">
+        <h2>About me</h2>
+        <p>
+          Zhuolong Yu is currently a Professor (特任教授) at the <a href="https://cs.ustc.edu.cn/main.htm">School of Computer Science and Technology</a>, <a href="https://www.ustc.edu.cn/">University of Science and Technology of China (USTC)</a>.
+          He received his Ph.D. from <a href="https://www.jhu.edu/">Johns Hopkins University</a>, where he was advised by <a href="https://xinjin.github.io/">Prof. Xin Jin</a> and <a href="https://www.cs.jhu.edu/~vova/">Prof. Vladimir Braverman</a>.
+        </p>
+        <p>
+          Before joining USTC, he spent two and a half years at Microsoft, working on high-performance networking—particularly RDMA—to support hyperscale AI training workloads (including large-scale training clusters for GPT-4.5, and cross-region training) and cloud storage systems (Azure Storage).
+        </p>
+        <p>
+          His research interests include designing high-performance and programmable networked systems for cloud and AI workloads, low-latency communication and RDMA for large-scale distributed systems, and cloud-scale data center networks and intelligent computing infrastructure.
+        </p>
+        <p>
+          余卓隆现为<a href="https://www.ustc.edu.cn/">中国科学技术大学</a><a href="https://cs.ustc.edu.cn/main.htm">计算机科学与技术学院</a>特任教授。
+          他于<a href="https://www.jhu.edu/">约翰斯·霍普金斯大学</a>获得博士学位，师从<a href="https://xinjin.github.io/">金鑫（Xin Jin）教授</a>和<a href="https://www.cs.jhu.edu/~vova/">Vladimir Braverman 教授</a>。
+        </p>
+        <p>
+          在加入中国科学技术大学之前，他曾在微软公司工作两年半，主要从事高性能网络系统的研发，重点聚焦 RDMA 技术，
+          为超大规模 AI 训练系统（包括 GPT-4.5 等大模型训练集群，和跨地域大模型训练）以及云存储系统（Azure Storage）提供底层网络支撑。
+        </p>
+        <p>
+          他的研究方向包括：面向云计算与人工智能负载的高性能与可编程网络系统设计，
+          大规模分布式系统中的低时延通信与 RDMA 技术，以及云规模数据中心网络与智能计算基础设施。
+        </p>
+        <hr>
+      </section>
+      
+      <section id='education'>
         <h2>
-          About me
+            Education
         </h2>
-        <p>
-          &nbsp;&nbsp;I've graduated in Jan 2023. I'm now at Microsoft, working on RDMA, large-scale network for storage and AI</a>. 
-        </p>
-        <p>
-          &nbsp;&nbsp;My research interest lies broadly in the field of distributed systems and computer networks.
-        </p>
+        <li>Ph.D. in Computer Science, Johns Hopkins University, 2023</li>
+        <li>Master in Computer Science, University of Science and Technology of China, 2018</li>
+        <li>Bachelor in Computer Science, University of Science and Technology of China, 2015</li>
         <hr>
       </section>
       
@@ -141,10 +170,31 @@
         </h2>
         <!-- <h3> Selected papers </h3> -->
         <li>
+            <span class="papertitle">Enabling Reconfiguration-Communication Overlap for Collective Communication in Optical Networks</span><br/>
+            <span class="paperauthor">Changbo Wu</span>, Zhuolong Yu, Gongming Zhao, Hongli Xu<br/>
+            arXiv 2025<br/>
+            [<a href="https://arxiv.org/pdf/2510.19322.pdf">PDF</a>]
+        </li>
+        <li>
+            <span class="papertitle">SDR-RDMA: Software-Defined Reliability Architecture for Planetary Scale RDMA Communication</span><br/>
+            Mikhail Khalilov, Siyuan Shen, Marcin Chrapek, Tiancheng Chen, Kenji Nakano, Peter-Jan Gootzen, Salvatore Di Girolamo, Rami Nudelman, Gil Bloch, Sreevatsa Anantharamu, Mahmoud Elhaddad, Jithin Jose, Abdul Kabbani, Scott Moe, Konstantin Taranov, <span class="paperauthor">Zhuolong Yu</span>, Jie Zhang, Nicola Mazzoletti, Torsten Hoefler<br/>
+            SC 2025<br/>
+            <i style="color:#28B463 ;">[Artifacts Available]</i> <i style="color:#EC7063;">[Artifacts Functional]</i> <i style="color:#2980B9;">[Artifacts Reusable]</i><br/>
+            [<a href="papers/sc2025sdrrdma.pdf">PDF</a>]
+        </li>
+        <li>
+            <span class="papertitle">Uno: A One-Stop Solution for Inter-and Intra-Datacenter Congestion Control and Reliable Connectivity</span><br/>
+            Tommaso Bonato, Sepehr Abdous, Abdul Kabbani, Ahmad Ghalayini, Nadeen Gebara, Terry Lam, Anup Agarwal, Tiancheng Chen, <span class="paperauthor">Zhuolong Yu</span>, Konstantin Taranov, Mahmoud Elhaddad, Daniele De Sensi, Soudeh Ghorbani, Torsten Hoefler<br/>
+            SC 2025<br/>
+            <i style="color:#28B463 ;">[Artifacts Available]</i> <i style="color:#EC7063;">[Artifacts Functional]</i> <i style="color:#2980B9;">[Artifacts Reusable]</i><br/>
+            [<a href="papers/sc2025uno.pdf">PDF</a>]
+        </li>
+        <li>
             <span class="papertitle">Understanding the Micro-Behaviors of Hardware Offloaded Network Stacks with Lumina</span><br/>
             <span class="paperauthor">Zhuolong Yu</span>, Bowen Su, Wei Bai, Shachar Raindel, Vladimir Braverman, Xin Jin<br/>
             SIGCOMM 2023<br/>
-            [<a href="papers/sigcomm23lumina.pdf">PDF</a>]
+            <i style="color:#2980B9;">Extensively used at Microsoft and NVIDIA to debug and validate new RDMA transport features (e.g., multipath RDMA, long-haul RDMA) for large-scale AI and storage systems.</i><br/>
+            [<a href="papers/sigcomm23lumina.pdf">PDF</a>][<a href="https://github.com/lumina-test/lumina">Code</a>]
         </li>
         <li>
             <span class="papertitle">Zeta: A Scalable and Robust East-West Communication Framework in Large-Scale Clouds</span><br/>
@@ -201,74 +251,6 @@
           <span class="highlight">(Best paper runner-up, fast-tracked to IEEE/ACM Transaction on Networking)</span><br/>
           [<a href="papers/ICNP2016update.pdf">PDF</a>]
         </li>
-
-        <!-- <h3> Journal Paper </h3>
-        <li>
-          <span class="papertitle">Minimizing Flow Statistics Collection Cost Using Wildcard-based Requests in SDNs</span><br/>
-          Hongli Xu, <span class="paperauthor">Zhuolong Yu</span>, Chen Qian, Xiang-yang Li, Zichun Liu, Liusheng Huang<br/>
-          IEEE/ACM Transactions on Networking<br/>
-          [<a href="papers/ToN_fsc.pdf">PDF</a>]
-        </li>
-        <li>
-          <span class="papertitle">Joint Route Selection and Update Scheduling for Low-Latency Update in SDNs</span><br/>
-          Hongli Xu, <span class="paperauthor">Zhuolong Yu</span>, Xiang-yang Li, Chen Qian, Liusheng Huang, Taeho Jung<br/>
-          IEEE/ACM Transactions on Networking<br/>
-          [<a href="papers/ToN_update.pdf">PDF</a>]
-        </li>
-
-          
-        <hr>
-      </section> -->
-        
-      <!-- <section id='experience'>
-        <h2>
-          Experience
-        </h2>
-        <li>Research Intern, at Microsoft Research Redmond, 2021.5-2021.8</li>
-        <li>Teaching Assistant, at Johns Hopkins University, 2020.2-2020.5</li>
-        <li>Research Assistant, at Johns Hopkins University, 2018.9-Present</li>
-        <li>Research Assistant, at University of Science and Technology of China, 2015.3-2018.6</li>
-        <li>Teaching Assistant of Advanced Software Engineering, at University of Science and Technology of China, 2016.9-2016.12</li>
-        <li>Development Intern, at Autochips Inc, 2015.8-2015.12</li>
-        <li>Development Intern, at Baidu Inc, 2014.7-2014.11</li>
-        <hr>
-      </section> -->
-
-      <!-- <section id='service'>
-        <h2>
-            Professional Services
-        </h2>
-        <li> SIGCOMM'2022 Artifact Evaluation PC Member</li>
-        <li> IEEE Transactions on Dependable and Secure Computing, Reviewer</li>
-        <li> INFOCOM'2022 External reviewer</li>
-        <li> Sigmetrics'2022 External reviewer</li>
-        <li> ICLR'2021 External reviewer</li>
-        <li> INFOCOM'2021 External reviewer</li>
-        <li> SIGCOMM'2020 Student Volunteer</li>
-        <li> INFOCOM'2020 External reviewer</li>
-      </section> -->
-      
-      <!-- <section id='awards'>
-        <h2>
-          Awards
-        </h2>
-        <li>National Scholarship, 2017</li>
-        <li>National Scholarship, 2016</li>
-        <li>Excellent Elite Student Scholarship, 2015</li>
-        <li>Aegon-Industrial Responsibility Scholarship, 2013</li>
-        <li>The Second Prize of The first China Student RDMA Programming Competition, 2013</li>
-        <hr> -->
-      <!-- </section> -->
-
-      <!-- <section id='abitmore'>
-        <h2>
-          A bit more
-        </h2>
-        <p>I come from Yueqing 325600 China, a lovely city with Yandang Mountain and great food (and lots of other things of course ...).</p>
-        <p>I finished a half-marathon at Soochow, and I am planning to finish a full marathon somewhere sometime during my Ph.D.</p>
-        <p>I guess that's all before something else jumps into my mind. </p>
-        <hr> -->
-      <!-- </section> -->
         <div class="row">
           <div class="col-md-6">
             <a href="http://info.flagcounter.com/ifQH"><img src="http://s06.flagcounter.com/count/ifQH/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_0/labels_0/pageviews_0/flags_0/" alt="Flag Counter" border="0" hspace="0" vspace ="0"></a>
@@ -283,13 +265,9 @@
             This webpage was built with
             <a href="http://twitter.github.com/bootstrap">Bootstrap</a>
         </div>
-      
-      
-      
-    </div><!-- /.container -->
-    
-    
+      </section>
 
+    </div><!-- /.container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
